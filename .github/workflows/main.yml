@@ -7,14 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set working directory
-        run: cd Lab5_Starter
       - name: Install Dependencies
         run: npm install
-        working-directory: Lab5_Starter
       - name: Run sum test
         run: npm test ./__tests__/sum.test.js
-        working-directory: Lab5_Starter
       - name: Run unit test suite
         run: npm test ./__tests__/unit.test.js
-        working-directory: Lab5_Starter
+
